@@ -1,0 +1,453 @@
+[2025-05-14 12:53:15] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 12:53:15] GET Data: {"vnp_Amount":"771300000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14955951","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 15","vnp_PayDate":"20250514125333","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14955951","vnp_TransactionStatus":"00","vnp_TxnRef":"15","vnp_SecureHash":"9179d6da056a56a800bf52df87bf2710eba54c9ed2467549bec99b89492f883edd07a1203474b53dd7524f311d59c6615381a1414855a8698c98ec07fd40283f"}
+[2025-05-14 12:53:15] Calculated Hash: 9179d6da056a56a800bf52df87bf2710eba54c9ed2467549bec99b89492f883edd07a1203474b53dd7524f311d59c6615381a1414855a8698c98ec07fd40283f
+[2025-05-14 12:53:15] Received Hash: 9179d6da056a56a800bf52df87bf2710eba54c9ed2467549bec99b89492f883edd07a1203474b53dd7524f311d59c6615381a1414855a8698c98ec07fd40283f
+[2025-05-14 12:53:15] IPN Signature VALID.
+[2025-05-14 12:53:15] Payment DB ID (vnp_TxnRef): 15
+[2025-05-14 12:53:15] VNPAY Response Code: 00
+[2025-05-14 12:53:15] VNPAY Amount Received: 7713000
+[2025-05-14 12:53:15] Payment record found in DB: {"id":15,"nguoi_dung_id":20,"tong_tien":"7713000.00","trang_thai":"pending"}
+[2025-05-14 12:53:15] Payment status is pending. Processing update...
+[2025-05-14 12:53:15] VNPAY reported SUCCESS (00).
+[2025-05-14 12:53:15] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 12:53:33
+[2025-05-14 12:53:15] Updated thanh_toan: 1 row(s).
+[2025-05-14 12:53:15] Updated dat_phong: 2 row(s).
+[2025-05-14 12:53:15] Transaction CSDL đã được commit.
+[2025-05-14 12:53:15] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 12:53:15] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 13:18:34] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 13:18:34] GET Data: {"vnp_Amount":"857000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14955980","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 16","vnp_PayDate":"20250514131853","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14955980","vnp_TransactionStatus":"00","vnp_TxnRef":"16","vnp_SecureHash":"d08dfcc5c5855521b2dc53790136915fc1c9de71deffa048ae854380f18a6cd4085f83e8a42b722d51f137f44e8b1503ec9acb8682b9945861882d7a6c979da8"}
+[2025-05-14 13:18:34] Calculated Hash: d08dfcc5c5855521b2dc53790136915fc1c9de71deffa048ae854380f18a6cd4085f83e8a42b722d51f137f44e8b1503ec9acb8682b9945861882d7a6c979da8
+[2025-05-14 13:18:34] Received Hash: d08dfcc5c5855521b2dc53790136915fc1c9de71deffa048ae854380f18a6cd4085f83e8a42b722d51f137f44e8b1503ec9acb8682b9945861882d7a6c979da8
+[2025-05-14 13:18:34] IPN Signature VALID.
+[2025-05-14 13:18:34] Payment DB ID (vnp_TxnRef): 16
+[2025-05-14 13:18:34] VNPAY Response Code: 00
+[2025-05-14 13:18:34] VNPAY Amount Received: 8570000
+[2025-05-14 13:18:34] Payment record found in DB: {"id":16,"nguoi_dung_id":20,"tong_tien":"8570000.00","trang_thai":"pending"}
+[2025-05-14 13:18:34] Payment status is pending. Processing update...
+[2025-05-14 13:18:34] VNPAY reported SUCCESS (00).
+[2025-05-14 13:18:34] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 13:18:53
+[2025-05-14 13:18:34] Updated thanh_toan: 1 row(s).
+[2025-05-14 13:18:34] Updated dat_phong: 0 row(s).
+[2025-05-14 13:18:34] Transaction CSDL đã được commit.
+[2025-05-14 13:18:34] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 13:18:34] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 17:06:42] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 17:06:42] GET Data: {"vnp_Amount":"688000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14956728","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 17","vnp_PayDate":"20250514170701","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14956728","vnp_TransactionStatus":"00","vnp_TxnRef":"17","vnp_SecureHash":"1ea5416f707071bdd40e3a375792b096db2893af1fa43a6a8653bdfc53c4bb263c0d0d71f9537e37a0dca3630f336cce117fc21388aaae454da4f86948dcbf7d"}
+[2025-05-14 17:06:42] Calculated Hash: 1ea5416f707071bdd40e3a375792b096db2893af1fa43a6a8653bdfc53c4bb263c0d0d71f9537e37a0dca3630f336cce117fc21388aaae454da4f86948dcbf7d
+[2025-05-14 17:06:42] Received Hash: 1ea5416f707071bdd40e3a375792b096db2893af1fa43a6a8653bdfc53c4bb263c0d0d71f9537e37a0dca3630f336cce117fc21388aaae454da4f86948dcbf7d
+[2025-05-14 17:06:42] IPN Signature VALID.
+[2025-05-14 17:06:42] Payment DB ID (vnp_TxnRef): 17
+[2025-05-14 17:06:42] VNPAY Response Code: 00
+[2025-05-14 17:06:42] VNPAY Amount Received: 6880000
+[2025-05-14 17:06:42] Payment record found in DB: {"id":17,"nguoi_dung_id":20,"tong_tien":"6880000.00","trang_thai":"pending"}
+[2025-05-14 17:06:42] Payment status is pending. Processing update...
+[2025-05-14 17:06:42] VNPAY reported SUCCESS (00).
+[2025-05-14 17:06:42] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 17:07:01
+[2025-05-14 17:06:42] Updated thanh_toan: 1 row(s).
+[2025-05-14 17:06:42] Updated dat_phong: 1 row(s).
+[2025-05-14 17:06:42] Transaction CSDL đã được commit.
+[2025-05-14 17:06:42] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 17:06:42] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 17:57:12] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 17:57:12] GET Data: {"vnp_Amount":"412000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14956840","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 18","vnp_PayDate":"20250514175731","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14956840","vnp_TransactionStatus":"00","vnp_TxnRef":"18","vnp_SecureHash":"eedce5b69773a91a68004e61b7ff88f8f8420bbe9a8184094075c27cb41792403c5c4b2db997f55e058f7b3c55dbbd221a8facd2da3b45accdbd9b9573e71d5a"}
+[2025-05-14 17:57:12] Calculated Hash: eedce5b69773a91a68004e61b7ff88f8f8420bbe9a8184094075c27cb41792403c5c4b2db997f55e058f7b3c55dbbd221a8facd2da3b45accdbd9b9573e71d5a
+[2025-05-14 17:57:12] Received Hash: eedce5b69773a91a68004e61b7ff88f8f8420bbe9a8184094075c27cb41792403c5c4b2db997f55e058f7b3c55dbbd221a8facd2da3b45accdbd9b9573e71d5a
+[2025-05-14 17:57:12] IPN Signature VALID.
+[2025-05-14 17:57:12] Payment DB ID (vnp_TxnRef): 18
+[2025-05-14 17:57:12] VNPAY Response Code: 00
+[2025-05-14 17:57:12] VNPAY Amount Received: 4120000
+[2025-05-14 17:57:12] Payment record found in DB: {"id":18,"nguoi_dung_id":20,"tong_tien":"4120000.00","trang_thai":"pending"}
+[2025-05-14 17:57:12] Payment status is pending. Processing update...
+[2025-05-14 17:57:12] VNPAY reported SUCCESS (00).
+[2025-05-14 17:57:12] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 17:57:31
+[2025-05-14 17:57:12] Updated thanh_toan: 1 row(s).
+[2025-05-14 17:57:12] Updated dat_phong: 1 row(s).
+[2025-05-14 17:57:12] Transaction CSDL đã được commit.
+[2025-05-14 17:57:12] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 17:57:12] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 18:05:20] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 18:05:20] GET Data: {"vnp_Amount":"206000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14956854","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 19","vnp_PayDate":"20250514180540","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14956854","vnp_TransactionStatus":"00","vnp_TxnRef":"19","vnp_SecureHash":"581e560fae41168078f408739ded3c816def7e94bff3888ef74f3ff1ee07d2ef0342261f70901a09c3cd0d1b339a4f38a030dbc11922998c11ee11ae409a94ed"}
+[2025-05-14 18:05:20] Calculated Hash: 581e560fae41168078f408739ded3c816def7e94bff3888ef74f3ff1ee07d2ef0342261f70901a09c3cd0d1b339a4f38a030dbc11922998c11ee11ae409a94ed
+[2025-05-14 18:05:20] Received Hash: 581e560fae41168078f408739ded3c816def7e94bff3888ef74f3ff1ee07d2ef0342261f70901a09c3cd0d1b339a4f38a030dbc11922998c11ee11ae409a94ed
+[2025-05-14 18:05:20] IPN Signature VALID.
+[2025-05-14 18:05:20] Payment DB ID (vnp_TxnRef): 19
+[2025-05-14 18:05:20] VNPAY Response Code: 00
+[2025-05-14 18:05:20] VNPAY Amount Received: 2060000
+[2025-05-14 18:05:20] Payment record found in DB: {"id":19,"nguoi_dung_id":20,"tong_tien":"2060000.00","trang_thai":"pending"}
+[2025-05-14 18:05:20] Payment status is pending. Processing update...
+[2025-05-14 18:05:20] VNPAY reported SUCCESS (00).
+[2025-05-14 18:05:20] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 18:05:40
+[2025-05-14 18:05:20] Updated thanh_toan: 1 row(s).
+[2025-05-14 18:05:20] Updated dat_phong: 1 row(s).
+[2025-05-14 18:05:20] Transaction CSDL đã được commit.
+[2025-05-14 18:05:20] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 18:05:20] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 18:29:12] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 18:29:12] GET Data: {"vnp_Amount":"235000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14956881","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 20","vnp_PayDate":"20250514182932","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14956881","vnp_TransactionStatus":"00","vnp_TxnRef":"20","vnp_SecureHash":"36f3c1b83f4763bac46daff4885f27ebde27228eca0b28fefc78614fa8e514f3675739587355701e6a576dd037e0382da4059abcd6b0ca1d8a43fb867c942f64"}
+[2025-05-14 18:29:12] Calculated Hash: 36f3c1b83f4763bac46daff4885f27ebde27228eca0b28fefc78614fa8e514f3675739587355701e6a576dd037e0382da4059abcd6b0ca1d8a43fb867c942f64
+[2025-05-14 18:29:12] Received Hash: 36f3c1b83f4763bac46daff4885f27ebde27228eca0b28fefc78614fa8e514f3675739587355701e6a576dd037e0382da4059abcd6b0ca1d8a43fb867c942f64
+[2025-05-14 18:29:12] IPN Signature VALID.
+[2025-05-14 18:29:12] Payment DB ID (vnp_TxnRef): 20
+[2025-05-14 18:29:12] VNPAY Response Code: 00
+[2025-05-14 18:29:12] VNPAY Amount Received: 2350000
+[2025-05-14 18:29:12] Payment record found in DB: {"id":20,"nguoi_dung_id":20,"tong_tien":"2350000.00","trang_thai":"pending"}
+[2025-05-14 18:29:12] Payment status is pending. Processing update...
+[2025-05-14 18:29:12] VNPAY reported SUCCESS (00).
+[2025-05-14 18:29:12] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 18:29:32
+[2025-05-14 18:29:12] Updated thanh_toan: 1 row(s).
+[2025-05-14 18:29:12] Updated dat_phong: 1 row(s).
+[2025-05-14 18:29:12] Transaction CSDL đã được commit.
+[2025-05-14 18:29:12] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 18:29:12] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 19:52:52] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 19:52:52] GET Data: {"vnp_Amount":"235000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14956982","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 21","vnp_PayDate":"20250514195312","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14956982","vnp_TransactionStatus":"00","vnp_TxnRef":"21","vnp_SecureHash":"0bf54f43fb6d294a8fd5a6c3b2a3b5490774d8be8f5f98c3cde3725e4767b327b709ac755b9a2fd89713a7c26589b886c778b0a2c5f7ecd2f452a6c6679db8cb"}
+[2025-05-14 19:52:52] Calculated Hash: 0bf54f43fb6d294a8fd5a6c3b2a3b5490774d8be8f5f98c3cde3725e4767b327b709ac755b9a2fd89713a7c26589b886c778b0a2c5f7ecd2f452a6c6679db8cb
+[2025-05-14 19:52:52] Received Hash: 0bf54f43fb6d294a8fd5a6c3b2a3b5490774d8be8f5f98c3cde3725e4767b327b709ac755b9a2fd89713a7c26589b886c778b0a2c5f7ecd2f452a6c6679db8cb
+[2025-05-14 19:52:52] IPN Signature VALID.
+[2025-05-14 19:52:52] Payment DB ID (vnp_TxnRef): 21
+[2025-05-14 19:52:52] VNPAY Response Code: 00
+[2025-05-14 19:52:52] VNPAY Amount Received: 2350000
+[2025-05-14 19:52:52] Payment record found in DB: {"id":21,"nguoi_dung_id":20,"tong_tien":"2350000.00","trang_thai":"pending"}
+[2025-05-14 19:52:52] Payment status is pending. Processing update...
+[2025-05-14 19:52:52] VNPAY reported SUCCESS (00).
+[2025-05-14 19:52:52] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 19:53:12
+[2025-05-14 19:52:52] Updated thanh_toan: 1 row(s).
+[2025-05-14 19:52:52] Updated dat_phong: 1 row(s).
+[2025-05-14 19:52:52] Transaction CSDL đã được commit.
+[2025-05-14 19:52:52] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 19:52:52] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 20:43:33] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 20:43:33] GET Data: {"vnp_Amount":"235000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14957062","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 23","vnp_PayDate":"20250514204349","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14957062","vnp_TransactionStatus":"00","vnp_TxnRef":"23","vnp_SecureHash":"27168c70dd8ffd0a4970a00c5f649c80e3b01a16714a3f197919e010b43aafb3e701f64d20f26ac94eb8846ba95f2d8d38d39c1b154ef190c1f632ace7165bb5"}
+[2025-05-14 20:43:33] Calculated Hash: 27168c70dd8ffd0a4970a00c5f649c80e3b01a16714a3f197919e010b43aafb3e701f64d20f26ac94eb8846ba95f2d8d38d39c1b154ef190c1f632ace7165bb5
+[2025-05-14 20:43:33] Received Hash: 27168c70dd8ffd0a4970a00c5f649c80e3b01a16714a3f197919e010b43aafb3e701f64d20f26ac94eb8846ba95f2d8d38d39c1b154ef190c1f632ace7165bb5
+[2025-05-14 20:43:33] IPN Signature VALID.
+[2025-05-14 20:43:33] Payment DB ID (vnp_TxnRef): 23
+[2025-05-14 20:43:33] VNPAY Response Code: 00
+[2025-05-14 20:43:33] VNPAY Amount Received: 2350000
+[2025-05-14 20:43:33] Payment record found in DB: {"id":23,"nguoi_dung_id":20,"tong_tien":"2350000.00","trang_thai":"pending"}
+[2025-05-14 20:43:33] Payment status is pending. Processing update...
+[2025-05-14 20:43:33] VNPAY reported SUCCESS (00).
+[2025-05-14 20:43:33] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 20:43:49
+[2025-05-14 20:43:33] Updated thanh_toan: 1 row(s).
+[2025-05-14 20:43:33] Updated dat_phong: 1 row(s).
+[2025-05-14 20:43:33] Transaction CSDL đã được commit.
+[2025-05-14 20:43:33] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 20:43:33] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-14 21:19:30] ------ IPN REQUEST RECEIVED ------
+[2025-05-14 21:19:30] GET Data: {"vnp_Amount":"235000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14957130","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 31","vnp_PayDate":"20250514211950","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14957130","vnp_TransactionStatus":"00","vnp_TxnRef":"31","vnp_SecureHash":"9c1daaf0befc84a641ce88036fa195fd9840d9e44be33c8f4fe4bd6a718a89eda1591a7ae5d3c20e6ffd2c38ff238d61d5d46210d3bada56a837334d1346a286"}
+[2025-05-14 21:19:30] Calculated Hash: 9c1daaf0befc84a641ce88036fa195fd9840d9e44be33c8f4fe4bd6a718a89eda1591a7ae5d3c20e6ffd2c38ff238d61d5d46210d3bada56a837334d1346a286
+[2025-05-14 21:19:30] Received Hash: 9c1daaf0befc84a641ce88036fa195fd9840d9e44be33c8f4fe4bd6a718a89eda1591a7ae5d3c20e6ffd2c38ff238d61d5d46210d3bada56a837334d1346a286
+[2025-05-14 21:19:30] IPN Signature VALID.
+[2025-05-14 21:19:30] Payment DB ID (vnp_TxnRef): 31
+[2025-05-14 21:19:30] VNPAY Response Code: 00
+[2025-05-14 21:19:30] VNPAY Amount Received: 2350000
+[2025-05-14 21:19:30] Payment record found in DB: {"id":31,"nguoi_dung_id":20,"tong_tien":"2350000.00","trang_thai":"pending"}
+[2025-05-14 21:19:30] Payment status is pending. Processing update...
+[2025-05-14 21:19:30] VNPAY reported SUCCESS (00).
+[2025-05-14 21:19:30] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-14 21:19:50
+[2025-05-14 21:19:30] Updated thanh_toan: 1 row(s).
+[2025-05-14 21:19:30] Updated dat_phong: 1 row(s).
+[2025-05-14 21:19:30] Transaction CSDL đã được commit.
+[2025-05-14 21:19:30] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-14 21:19:30] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 09:56:22] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 09:56:22] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"VNPAY","vnp_CardType":"QRCODE","vnp_OrderInfo":"Thanh toan don hang 36","vnp_PayDate":"20250515095643","vnp_ResponseCode":"24","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"0","vnp_TransactionStatus":"02","vnp_TxnRef":"36","vnp_SecureHash":"51b614bb2441591aeb439f97aa068c4e0139dd6310b69f12003557c71d0af04c92cc302fefd937c9148799f3c51fef47949fc7fb257cb767173471da9b016aa5"}
+[2025-05-15 09:56:22] Calculated Hash: 51b614bb2441591aeb439f97aa068c4e0139dd6310b69f12003557c71d0af04c92cc302fefd937c9148799f3c51fef47949fc7fb257cb767173471da9b016aa5
+[2025-05-15 09:56:22] Received Hash: 51b614bb2441591aeb439f97aa068c4e0139dd6310b69f12003557c71d0af04c92cc302fefd937c9148799f3c51fef47949fc7fb257cb767173471da9b016aa5
+[2025-05-15 09:56:22] IPN Signature VALID.
+[2025-05-15 09:56:22] Payment DB ID (vnp_TxnRef): 36
+[2025-05-15 09:56:22] VNPAY Response Code: 24
+[2025-05-15 09:56:22] VNPAY Amount Received: 1762500
+[2025-05-15 09:56:22] Payment record found in DB: {"id":36,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending"}
+[2025-05-15 09:56:22] Payment status is pending. Processing update...
+[2025-05-15 09:56:22] VNPAY reported FAILURE (24).
+[2025-05-15 09:56:22] Updated thanh_toan to failed: 1 row(s).
+[2025-05-15 09:56:22] Transaction CSDL đã được commit.
+[2025-05-15 09:56:22] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success (transaction on VNPAY side failed with code 24)"}
+[2025-05-15 09:56:22] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 10:08:03] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 10:08:03] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958020","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 38 VCID1","vnp_PayDate":"20250515100825","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958020","vnp_TransactionStatus":"00","vnp_TxnRef":"38","vnp_SecureHash":"5ed60aa9e31d0c4e6850f28a68af55cda559fea3b1c279d8eaa02d390097752d915e6d5d0bed25f413596538ce9cf26dc15078e3e1df20b0355008dacd2d621c"}
+[2025-05-15 10:08:03] IPN --- Data for Hashing: vnp_Amount=176250000&vnp_BankCode=NCB&vnp_BankTranNo=VNP14958020&vnp_CardType=ATM&vnp_OrderInfo=Thanh+toan+don+hang+38+VCID1&vnp_PayDate=20250515100825&vnp_ResponseCode=00&vnp_TmnCode=DZDWFVXQ&vnp_TransactionNo=14958020&vnp_TransactionStatus=00&vnp_TxnRef=38
+[2025-05-15 10:08:03] IPN --- Calculated SecureHash: 5ed60aa9e31d0c4e6850f28a68af55cda559fea3b1c279d8eaa02d390097752d915e6d5d0bed25f413596538ce9cf26dc15078e3e1df20b0355008dacd2d621c
+[2025-05-15 10:08:03] IPN --- Received SecureHash: 5ed60aa9e31d0c4e6850f28a68af55cda559fea3b1c279d8eaa02d390097752d915e6d5d0bed25f413596538ce9cf26dc15078e3e1df20b0355008dacd2d621c
+[2025-05-15 10:08:03] IPN Signature VALID.
+[2025-05-15 10:08:03] Payment DB ID (vnp_TxnRef): 38
+[2025-05-15 10:08:03] VNPAY Response Code: 00
+[2025-05-15 10:08:03] VNPAY Amount Received: 1762500
+[2025-05-15 10:08:03] Payment record found in DB: {"id":38,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending","voucher_id":1}
+[2025-05-15 10:08:03] Payment status is 'pending'. Processing update...
+[2025-05-15 10:08:03] VNPAY reported SUCCESS (00).
+[2025-05-15 10:08:03] Updated thanh_toan to 'completed': 1 row(s).
+[2025-05-15 10:08:03] Updated related dat_phong records.
+[2025-05-15 10:08:03] Processing voucher usage for voucher_id: 1, user_id: 20, thanh_toan_id: 38
+[2025-05-15 10:08:03] DATABASE EXCEPTION during IPN processing: Unknown column 'thanh_toan_id' in 'field list' - InputData: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958020","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 38 VCID1","vnp_PayDate":"20250515100825","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958020","vnp_TransactionStatus":"00","vnp_TxnRef":"38"}
+[2025-05-15 10:08:03] Final response to VNPay: {"RspCode":"99","Message":"System Error on Merchant Side"}
+[2025-05-15 10:08:03] ------ IPN PROCESSING COMPLETE ------
+
+[2025-05-15 10:10:44] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 10:10:44] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958026","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 39","vnp_PayDate":"20250515101104","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958026","vnp_TransactionStatus":"00","vnp_TxnRef":"39","vnp_SecureHash":"ecebeac36fd6adf8dfe394671273a8bb88e4ef81cd6ea23027f48fae3ac10bf9cd6fe7637b5590e36f5f64598acee69a1dc646ccb8581cf99cf326e0d9896004"}
+[2025-05-15 10:10:44] Calculated Hash: ecebeac36fd6adf8dfe394671273a8bb88e4ef81cd6ea23027f48fae3ac10bf9cd6fe7637b5590e36f5f64598acee69a1dc646ccb8581cf99cf326e0d9896004
+[2025-05-15 10:10:44] Received Hash: ecebeac36fd6adf8dfe394671273a8bb88e4ef81cd6ea23027f48fae3ac10bf9cd6fe7637b5590e36f5f64598acee69a1dc646ccb8581cf99cf326e0d9896004
+[2025-05-15 10:10:44] IPN Signature VALID.
+[2025-05-15 10:10:44] Payment DB ID (vnp_TxnRef): 39
+[2025-05-15 10:10:44] VNPAY Response Code: 00
+[2025-05-15 10:10:44] VNPAY Amount Received: 1762500
+[2025-05-15 10:10:44] Payment record found in DB: {"id":39,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending"}
+[2025-05-15 10:10:44] Payment status is pending. Processing update...
+[2025-05-15 10:10:44] VNPAY reported SUCCESS (00).
+[2025-05-15 10:10:44] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-15 10:11:04
+[2025-05-15 10:10:44] Updated thanh_toan: 1 row(s).
+[2025-05-15 10:10:44] Updated dat_phong: 1 row(s).
+[2025-05-15 10:10:44] Transaction CSDL đã được commit.
+[2025-05-15 10:10:44] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-15 10:10:44] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 10:40:09] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 10:40:09] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958137","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang #40","vnp_PayDate":"20250515104028","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958137","vnp_TransactionStatus":"00","vnp_TxnRef":"40","vnp_SecureHash":"f0a17fb035d1ff44089ff5f0eefc5c5f77af273ffbe837dba80d55a5976c1ea7e14eb8b279a379205014d786950d9768c147a82926f1b659a7df5b3d007fe5f5"}
+[2025-05-15 10:40:09] Calculated Hash: f0a17fb035d1ff44089ff5f0eefc5c5f77af273ffbe837dba80d55a5976c1ea7e14eb8b279a379205014d786950d9768c147a82926f1b659a7df5b3d007fe5f5
+[2025-05-15 10:40:09] Received Hash: f0a17fb035d1ff44089ff5f0eefc5c5f77af273ffbe837dba80d55a5976c1ea7e14eb8b279a379205014d786950d9768c147a82926f1b659a7df5b3d007fe5f5
+[2025-05-15 10:40:09] IPN Signature VALID.
+[2025-05-15 10:40:09] Payment DB ID (thanh_toan.id / vnp_TxnRef): 40
+[2025-05-15 10:40:09] VNPAY Response Code: 00
+[2025-05-15 10:40:09] VNPAY TransactionNo: 14958137
+[2025-05-15 10:40:09] VNPAY Amount Received (đã /100): 1762500
+[2025-05-15 10:40:09] Bản ghi thanh_toan tìm thấy trong CSDL: {"id":40,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending","voucher_id":null}
+[2025-05-15 10:40:09] Trạng thái thanh toán là 'pending'. Đang xử lý cập nhật...
+[2025-05-15 10:40:09] VNPAY báo giao dịch THÀNH CÔNG (00).
+[2025-05-15 10:40:09] Ngày thanh toán sẽ lưu vào CSDL: 2025-05-15 10:40:28
+[2025-05-15 10:40:09] Số dòng thanh_toan được cập nhật thành 'completed': 1
+[2025-05-15 10:40:09] Số dòng dat_phong được cập nhật trang_thai_thanh_toan: 1
+[2025-05-15 10:40:09] DATABASE EXCEPTION KHI XỬ LÝ IPN: Unknown column 'dp.khach_san_id' in 'field list'
+[2025-05-15 10:40:09] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"99","Message":"System Error on Merchant Side"}
+[2025-05-15 10:40:09] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 10:41:18] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 10:41:18] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958141","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang #41","vnp_PayDate":"20250515104140","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958141","vnp_TransactionStatus":"00","vnp_TxnRef":"41","vnp_SecureHash":"3fc25ac5becc1d008c8582680fe3c3d25e1b62fca131706c58332410b4b1af39bf6be0d90c3c962d2ff31f72e0cd42c2444b92dba5065bf2c82628044a0dee2f"}
+[2025-05-15 10:41:18] Calculated Hash: 3fc25ac5becc1d008c8582680fe3c3d25e1b62fca131706c58332410b4b1af39bf6be0d90c3c962d2ff31f72e0cd42c2444b92dba5065bf2c82628044a0dee2f
+[2025-05-15 10:41:18] Received Hash: 3fc25ac5becc1d008c8582680fe3c3d25e1b62fca131706c58332410b4b1af39bf6be0d90c3c962d2ff31f72e0cd42c2444b92dba5065bf2c82628044a0dee2f
+[2025-05-15 10:41:18] IPN Signature VALID.
+[2025-05-15 10:41:18] Payment DB ID (thanh_toan.id / vnp_TxnRef): 41
+[2025-05-15 10:41:18] VNPAY Response Code: 00
+[2025-05-15 10:41:18] VNPAY TransactionNo: 14958141
+[2025-05-15 10:41:18] VNPAY Amount Received (đã /100): 1762500
+[2025-05-15 10:41:18] Bản ghi thanh_toan tìm thấy trong CSDL: {"id":41,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending","voucher_id":null}
+[2025-05-15 10:41:18] Trạng thái thanh toán là 'pending'. Đang xử lý cập nhật...
+[2025-05-15 10:41:18] VNPAY báo giao dịch THÀNH CÔNG (00).
+[2025-05-15 10:41:18] Ngày thanh toán sẽ lưu vào CSDL: 2025-05-15 10:41:40
+[2025-05-15 10:41:18] Số dòng thanh_toan được cập nhật thành 'completed': 1
+[2025-05-15 10:41:18] Số dòng dat_phong được cập nhật trang_thai_thanh_toan: 1
+[2025-05-15 10:41:18] DATABASE EXCEPTION KHI XỬ LÝ IPN: Unknown column 'dp.khach_san_id' in 'field list'
+[2025-05-15 10:41:18] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"99","Message":"System Error on Merchant Side"}
+[2025-05-15 10:41:18] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 10:43:04] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 10:43:04] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958149","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang #42","vnp_PayDate":"20250515104320","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958149","vnp_TransactionStatus":"00","vnp_TxnRef":"42","vnp_SecureHash":"ea7e2dfcf66af5a34e00015e67f1e7db78a0c118bd48f26fde26cc3a8e67d16a1fa37a3eb61b177dbd6e87757ef48ebc598d31b356a7b00143eb69f460f6add1"}
+[2025-05-15 10:43:04] Calculated Hash: ea7e2dfcf66af5a34e00015e67f1e7db78a0c118bd48f26fde26cc3a8e67d16a1fa37a3eb61b177dbd6e87757ef48ebc598d31b356a7b00143eb69f460f6add1
+[2025-05-15 10:43:04] Received Hash: ea7e2dfcf66af5a34e00015e67f1e7db78a0c118bd48f26fde26cc3a8e67d16a1fa37a3eb61b177dbd6e87757ef48ebc598d31b356a7b00143eb69f460f6add1
+[2025-05-15 10:43:04] IPN Signature VALID.
+[2025-05-15 10:43:04] Payment DB ID (thanh_toan.id / vnp_TxnRef): 42
+[2025-05-15 10:43:04] VNPAY Response Code: 00
+[2025-05-15 10:43:04] VNPAY TransactionNo: 14958149
+[2025-05-15 10:43:04] VNPAY Amount Received (đã /100): 1762500
+[2025-05-15 10:43:04] Bản ghi thanh_toan tìm thấy trong CSDL: {"id":42,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending","voucher_id":null}
+[2025-05-15 10:43:04] Trạng thái thanh toán là 'pending'. Đang xử lý cập nhật...
+[2025-05-15 10:43:04] VNPAY báo giao dịch THÀNH CÔNG (00).
+[2025-05-15 10:43:04] Ngày thanh toán sẽ lưu vào CSDL: 2025-05-15 10:43:20
+[2025-05-15 10:43:04] Số dòng thanh_toan được cập nhật thành 'completed': 1
+[2025-05-15 10:43:04] Số dòng dat_phong được cập nhật trang_thai_thanh_toan: 1
+[2025-05-15 10:43:04] DATABASE EXCEPTION KHI XỬ LÝ IPN: Unknown column 'dp.khach_san_id' in 'field list'
+[2025-05-15 10:43:04] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"99","Message":"System Error on Merchant Side"}
+[2025-05-15 10:43:04] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 10:51:00] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 10:51:00] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958178","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 43","vnp_PayDate":"20250515105117","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958178","vnp_TransactionStatus":"00","vnp_TxnRef":"43","vnp_SecureHash":"18676b1efed87298021e4ebaebb35afbf7a46adb8c80299cfa0013483e1f616631282de3962fe655d61b07b9750b10f228754e4d857a7dc828a85bf0fcba694b"}
+[2025-05-15 10:51:00] Calculated Hash: 18676b1efed87298021e4ebaebb35afbf7a46adb8c80299cfa0013483e1f616631282de3962fe655d61b07b9750b10f228754e4d857a7dc828a85bf0fcba694b
+[2025-05-15 10:51:00] Received Hash: 18676b1efed87298021e4ebaebb35afbf7a46adb8c80299cfa0013483e1f616631282de3962fe655d61b07b9750b10f228754e4d857a7dc828a85bf0fcba694b
+[2025-05-15 10:51:00] IPN Signature VALID.
+[2025-05-15 10:51:00] Payment DB ID (vnp_TxnRef): 43
+[2025-05-15 10:51:00] VNPAY Response Code: 00
+[2025-05-15 10:51:00] VNPAY Amount Received: 1762500
+[2025-05-15 10:51:00] Payment record found in DB: {"id":43,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending"}
+[2025-05-15 10:51:00] Payment status is pending. Processing update...
+[2025-05-15 10:51:00] VNPAY reported SUCCESS (00).
+[2025-05-15 10:51:00] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-15 10:51:17
+[2025-05-15 10:51:00] Updated thanh_toan: 1 row(s).
+[2025-05-15 10:51:00] Updated dat_phong: 1 row(s).
+[2025-05-15 10:51:00] Transaction CSDL đã được commit.
+[2025-05-15 10:51:00] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-15 10:51:00] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 11:05:21] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 11:05:21] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958232","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 44","vnp_PayDate":"20250515110543","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958232","vnp_TransactionStatus":"00","vnp_TxnRef":"44","vnp_SecureHash":"55a43b9b238e2e655de13c07d76460e3fdc577f002416d116c813bb7577cc53896f7bc9917df18b7b390013fc2c1defba01c9b9954f0921cd790b0b94b7f7ec1"}
+[2025-05-15 11:05:21] Calculated Hash: 55a43b9b238e2e655de13c07d76460e3fdc577f002416d116c813bb7577cc53896f7bc9917df18b7b390013fc2c1defba01c9b9954f0921cd790b0b94b7f7ec1
+[2025-05-15 11:05:21] Received Hash: 55a43b9b238e2e655de13c07d76460e3fdc577f002416d116c813bb7577cc53896f7bc9917df18b7b390013fc2c1defba01c9b9954f0921cd790b0b94b7f7ec1
+[2025-05-15 11:05:21] IPN Signature VALID.
+[2025-05-15 11:05:21] Payment DB ID (vnp_TxnRef): 44
+[2025-05-15 11:05:21] VNPAY Response Code: 00
+[2025-05-15 11:05:21] VNPAY Amount Received: 1762500
+[2025-05-15 11:05:21] Payment record found in DB: {"id":44,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending","voucher_id":1,"nguoidung_voucher_id":null}
+[2025-05-15 11:05:21] Payment status is pending. Processing update...
+[2025-05-15 11:05:21] VNPAY reported SUCCESS (00).
+[2025-05-15 11:05:21] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-15 11:05:43
+[2025-05-15 11:05:21] Updated thanh_toan: 1 row(s).
+[2025-05-15 11:05:21] Updated dat_phong: 1 row(s).
+[2025-05-15 11:05:21] Transaction CSDL đã được commit.
+[2025-05-15 11:05:21] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-15 11:05:21] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 11:11:01] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 11:11:01] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958254","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 45","vnp_PayDate":"20250515111123","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958254","vnp_TransactionStatus":"00","vnp_TxnRef":"45","vnp_SecureHash":"1ab16e89b02a6dae812b090db9595e786a05f0a79867a7828d8be0b78b551f6491a427dc26a55fa0b61f2388572fa0b92afcb1e92ed6b62a2959c4012454c915"}
+[2025-05-15 11:11:01] Calculated Hash: 1ab16e89b02a6dae812b090db9595e786a05f0a79867a7828d8be0b78b551f6491a427dc26a55fa0b61f2388572fa0b92afcb1e92ed6b62a2959c4012454c915
+[2025-05-15 11:11:01] Received Hash: 1ab16e89b02a6dae812b090db9595e786a05f0a79867a7828d8be0b78b551f6491a427dc26a55fa0b61f2388572fa0b92afcb1e92ed6b62a2959c4012454c915
+[2025-05-15 11:11:01] IPN Signature VALID.
+[2025-05-15 11:11:01] Payment DB ID (vnp_TxnRef): 45
+[2025-05-15 11:11:01] VNPAY Response Code: 00
+[2025-05-15 11:11:01] VNPAY Amount Received: 1762500
+[2025-05-15 11:11:01] Payment record found in DB: {"id":45,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending","voucher_id":1,"nguoidung_voucher_id":null}
+[2025-05-15 11:11:01] Payment status is pending. Processing update...
+[2025-05-15 11:11:01] VNPAY reported SUCCESS (00).
+[2025-05-15 11:11:01] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-15 11:11:23
+[2025-05-15 11:11:01] Updated thanh_toan: 1 row(s).
+[2025-05-15 11:11:01] Updated dat_phong: 1 row(s).
+[2025-05-15 11:11:01] Transaction CSDL đã được commit.
+[2025-05-15 11:11:01] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-15 11:11:01] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 11:20:28] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 11:20:28] GET Data: {"vnp_Amount":"176250000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958280","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 46","vnp_PayDate":"20250515112049","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958280","vnp_TransactionStatus":"00","vnp_TxnRef":"46","vnp_SecureHash":"101eb6edb082e8fd3eb90d38805a655dd6f2b9386dc148a2cb479c9ab2d7c5615339e5a70b4d83969e14af25e485a4850dfbf67402ac97529944d002172aa388"}
+[2025-05-15 11:20:28] Calculated Hash: 101eb6edb082e8fd3eb90d38805a655dd6f2b9386dc148a2cb479c9ab2d7c5615339e5a70b4d83969e14af25e485a4850dfbf67402ac97529944d002172aa388
+[2025-05-15 11:20:28] Received Hash: 101eb6edb082e8fd3eb90d38805a655dd6f2b9386dc148a2cb479c9ab2d7c5615339e5a70b4d83969e14af25e485a4850dfbf67402ac97529944d002172aa388
+[2025-05-15 11:20:28] IPN Signature VALID.
+[2025-05-15 11:20:28] Payment DB ID (vnp_TxnRef): 46
+[2025-05-15 11:20:28] VNPAY Response Code: 00
+[2025-05-15 11:20:28] VNPAY Amount Received: 1762500
+[2025-05-15 11:20:28] Payment record found in DB: {"id":46,"nguoi_dung_id":20,"tong_tien":"1762500.00","trang_thai":"pending","voucher_id":1,"nguoidung_voucher_id":1}
+[2025-05-15 11:20:28] Payment status is pending. Processing update...
+[2025-05-15 11:20:28] VNPAY reported SUCCESS (00).
+[2025-05-15 11:20:28] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-15 11:20:49
+[2025-05-15 11:20:28] Updated thanh_toan: 1 row(s).
+[2025-05-15 11:20:28] Updated dat_phong: 1 row(s).
+[2025-05-15 11:20:28] Processing voucher: nguoidung_voucher_id=1, voucher_id=1
+[2025-05-15 11:20:28] Updated nguoidung_voucher (id: 1): 1 row(s).
+[2025-05-15 11:20:28] Updated voucher (id: 1) so_luong_da_dung: 1 row(s).
+[2025-05-15 11:20:28] Transaction CSDL đã được commit.
+[2025-05-15 11:20:28] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-15 11:20:28] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 14:50:50] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 14:50:50] GET Data: {"vnp_Amount":"305000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14958743","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 48","vnp_PayDate":"20250515145110","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14958743","vnp_TransactionStatus":"00","vnp_TxnRef":"48","vnp_SecureHash":"58bd6e7d437e21c41e8135fb28e85533faae6b1a4281e7da9fd596d8495d38de9e7daf7501804230666d40f7e47da91755952fe61e3febd0c20d3b9900f0a5bf"}
+[2025-05-15 14:50:50] Calculated Hash: 58bd6e7d437e21c41e8135fb28e85533faae6b1a4281e7da9fd596d8495d38de9e7daf7501804230666d40f7e47da91755952fe61e3febd0c20d3b9900f0a5bf
+[2025-05-15 14:50:50] Received Hash: 58bd6e7d437e21c41e8135fb28e85533faae6b1a4281e7da9fd596d8495d38de9e7daf7501804230666d40f7e47da91755952fe61e3febd0c20d3b9900f0a5bf
+[2025-05-15 14:50:50] IPN Signature VALID.
+[2025-05-15 14:50:50] Payment DB ID (vnp_TxnRef): 48
+[2025-05-15 14:50:50] VNPAY Response Code: 00
+[2025-05-15 14:50:50] VNPAY Amount Received: 3050000
+[2025-05-15 14:50:50] Payment record found in DB: {"id":48,"nguoi_dung_id":20,"tong_tien":"3050000.00","trang_thai":"pending","voucher_id":3,"nguoidung_voucher_id":4}
+[2025-05-15 14:50:50] Payment status is pending. Processing update...
+[2025-05-15 14:50:50] VNPAY reported SUCCESS (00).
+[2025-05-15 14:50:50] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-15 14:51:10
+[2025-05-15 14:50:50] Updated thanh_toan: 1 row(s).
+[2025-05-15 14:50:50] Updated dat_phong: 1 row(s).
+[2025-05-15 14:50:50] Processing voucher: nguoidung_voucher_id=4, voucher_id=3
+[2025-05-15 14:50:50] Updated nguoidung_voucher (id: 4): 1 row(s).
+[2025-05-15 14:50:50] Updated voucher (id: 3) so_luong_da_dung: 1 row(s).
+[2025-05-15 14:50:50] Bắt đầu tạo quyền đánh giá cho payment_id: 48
+[2025-05-15 14:50:50] Đã tạo quyền đánh giá cho ma_dat_phong_id: 46, khach_san_id: 1, nguoi_dung_id: 20
+[2025-05-15 14:50:50] Transaction CSDL đã được commit.
+[2025-05-15 14:50:50] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-15 14:50:50] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-15 16:06:55] ------ IPN REQUEST RECEIVED ------
+[2025-05-15 16:06:55] GET Data: {"vnp_Amount":"315000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14959005","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 49","vnp_PayDate":"20250515160715","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14959005","vnp_TransactionStatus":"00","vnp_TxnRef":"49","vnp_SecureHash":"a4f2252f26beffd85d05671c579737ddae3dd57bc7a53c6de2be28d28c85d4a3b86d1ecb70ff9de2eab27896f7168a5a2e574c6cf3583f4f8fa8cc8d22e64607"}
+[2025-05-15 16:06:55] Calculated Hash: a4f2252f26beffd85d05671c579737ddae3dd57bc7a53c6de2be28d28c85d4a3b86d1ecb70ff9de2eab27896f7168a5a2e574c6cf3583f4f8fa8cc8d22e64607
+[2025-05-15 16:06:55] Received Hash: a4f2252f26beffd85d05671c579737ddae3dd57bc7a53c6de2be28d28c85d4a3b86d1ecb70ff9de2eab27896f7168a5a2e574c6cf3583f4f8fa8cc8d22e64607
+[2025-05-15 16:06:55] IPN Signature VALID.
+[2025-05-15 16:06:55] Payment DB ID (vnp_TxnRef): 49
+[2025-05-15 16:06:55] VNPAY Response Code: 00
+[2025-05-15 16:06:55] VNPAY Amount Received: 3150000
+[2025-05-15 16:06:55] Payment record found in DB: {"id":49,"nguoi_dung_id":36,"tong_tien":"3150000.00","trang_thai":"pending","voucher_id":null,"nguoidung_voucher_id":null}
+[2025-05-15 16:06:55] Payment status is pending. Processing update...
+[2025-05-15 16:06:55] VNPAY reported SUCCESS (00).
+[2025-05-15 16:06:55] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-15 16:07:15
+[2025-05-15 16:06:55] Updated thanh_toan: 1 row(s).
+[2025-05-15 16:06:55] Updated dat_phong: 1 row(s).
+[2025-05-15 16:06:55] Bắt đầu tạo quyền đánh giá cho payment_id: 49
+[2025-05-15 16:06:55] Đã tạo quyền đánh giá cho ma_dat_phong_id: 47, khach_san_id: 1, nguoi_dung_id: 36
+[2025-05-15 16:06:55] Transaction CSDL đã được commit.
+[2025-05-15 16:06:55] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-15 16:06:55] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-16 11:25:25] ------ IPN REQUEST RECEIVED ------
+[2025-05-16 11:25:25] GET Data: {"vnp_Amount":"649800000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14960313","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 50","vnp_PayDate":"20250516112546","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14960313","vnp_TransactionStatus":"00","vnp_TxnRef":"50","vnp_SecureHash":"382489a271044b165350515dabc6c3a5c71a43f23474d2edc905fcac79b20d119631b545ea2e5d99ff63b981a82be53d081df242cc98e554a60af8c2d9716a75"}
+[2025-05-16 11:25:25] Calculated Hash: 382489a271044b165350515dabc6c3a5c71a43f23474d2edc905fcac79b20d119631b545ea2e5d99ff63b981a82be53d081df242cc98e554a60af8c2d9716a75
+[2025-05-16 11:25:25] Received Hash: 382489a271044b165350515dabc6c3a5c71a43f23474d2edc905fcac79b20d119631b545ea2e5d99ff63b981a82be53d081df242cc98e554a60af8c2d9716a75
+[2025-05-16 11:25:25] IPN Signature VALID.
+[2025-05-16 11:25:25] Payment DB ID (vnp_TxnRef): 50
+[2025-05-16 11:25:25] VNPAY Response Code: 00
+[2025-05-16 11:25:25] VNPAY Amount Received: 6498000
+[2025-05-16 11:25:25] Payment record found in DB: {"id":50,"nguoi_dung_id":20,"tong_tien":"6498000.00","trang_thai":"pending","voucher_id":4,"nguoidung_voucher_id":5}
+[2025-05-16 11:25:25] Payment status is pending. Processing update...
+[2025-05-16 11:25:25] VNPAY reported SUCCESS (00).
+[2025-05-16 11:25:25] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-16 11:25:46
+[2025-05-16 11:25:25] Updated thanh_toan: 1 row(s).
+[2025-05-16 11:25:25] Updated dat_phong: 1 row(s).
+[2025-05-16 11:25:25] Processing voucher: nguoidung_voucher_id=5, voucher_id=4
+[2025-05-16 11:25:25] Updated nguoidung_voucher (id: 5): 1 row(s).
+[2025-05-16 11:25:25] Updated voucher (id: 4) so_luong_da_dung: 1 row(s).
+[2025-05-16 11:25:25] Bắt đầu tạo quyền đánh giá cho payment_id: 50
+[2025-05-16 11:25:25] Đã tạo quyền đánh giá cho ma_dat_phong_id: 48, khach_san_id: 1, nguoi_dung_id: 20
+[2025-05-16 11:25:25] Transaction CSDL đã được commit.
+[2025-05-16 11:25:25] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-16 11:25:25] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-16 12:20:22] ------ IPN REQUEST RECEIVED ------
+[2025-05-16 12:20:22] GET Data: {"vnp_Amount":"236000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14960447","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 52","vnp_PayDate":"20250516122043","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14960447","vnp_TransactionStatus":"00","vnp_TxnRef":"52","vnp_SecureHash":"8f2c476190dd48ed000249d6646120d3eb605b069971b1dab076532a02ba416666de69b25d302c56834f5de21f254676ed59d72a9838fc38eec74c5431c045a5"}
+[2025-05-16 12:20:22] Calculated Hash: 8f2c476190dd48ed000249d6646120d3eb605b069971b1dab076532a02ba416666de69b25d302c56834f5de21f254676ed59d72a9838fc38eec74c5431c045a5
+[2025-05-16 12:20:22] Received Hash: 8f2c476190dd48ed000249d6646120d3eb605b069971b1dab076532a02ba416666de69b25d302c56834f5de21f254676ed59d72a9838fc38eec74c5431c045a5
+[2025-05-16 12:20:22] IPN Signature VALID.
+[2025-05-16 12:20:22] Payment DB ID (vnp_TxnRef): 52
+[2025-05-16 12:20:22] VNPAY Response Code: 00
+[2025-05-16 12:20:22] VNPAY Amount Received: 2360000
+[2025-05-16 12:20:22] Payment record found in DB: {"id":52,"nguoi_dung_id":20,"tong_tien":"2360000.00","trang_thai":"pending","voucher_id":null,"nguoidung_voucher_id":null}
+[2025-05-16 12:20:22] Payment status is pending. Processing update...
+[2025-05-16 12:20:22] VNPAY reported SUCCESS (00).
+[2025-05-16 12:20:22] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-16 12:20:43
+[2025-05-16 12:20:22] Updated thanh_toan: 1 row(s).
+[2025-05-16 12:20:22] Updated dat_phong: 1 row(s).
+[2025-05-16 12:20:22] Bắt đầu tạo quyền đánh giá cho payment_id: 52
+[2025-05-16 12:20:22] Đã tạo quyền đánh giá cho ma_dat_phong_id: 49, khach_san_id: 1, nguoi_dung_id: 20
+[2025-05-16 12:20:22] Transaction CSDL đã được commit.
+[2025-05-16 12:20:22] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-16 12:20:22] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+
+[2025-05-16 17:07:12] ------ IPN REQUEST RECEIVED ------
+[2025-05-16 17:07:12] GET Data: {"vnp_Amount":"286000000","vnp_BankCode":"NCB","vnp_BankTranNo":"VNP14961233","vnp_CardType":"ATM","vnp_OrderInfo":"Thanh toan don hang 54","vnp_PayDate":"20250516170727","vnp_ResponseCode":"00","vnp_TmnCode":"DZDWFVXQ","vnp_TransactionNo":"14961233","vnp_TransactionStatus":"00","vnp_TxnRef":"54","vnp_SecureHash":"a39f40043a340e7df27514de1ddb9a88bea912355ea84a9cbcd01356c51456ced612f4ffb6bab1e1444efe30e43b4811b2b09c583327551a4d39f0f60b212873"}
+[2025-05-16 17:07:12] Calculated Hash: a39f40043a340e7df27514de1ddb9a88bea912355ea84a9cbcd01356c51456ced612f4ffb6bab1e1444efe30e43b4811b2b09c583327551a4d39f0f60b212873
+[2025-05-16 17:07:12] Received Hash: a39f40043a340e7df27514de1ddb9a88bea912355ea84a9cbcd01356c51456ced612f4ffb6bab1e1444efe30e43b4811b2b09c583327551a4d39f0f60b212873
+[2025-05-16 17:07:12] IPN Signature VALID.
+[2025-05-16 17:07:12] Payment DB ID (vnp_TxnRef): 54
+[2025-05-16 17:07:12] VNPAY Response Code: 00
+[2025-05-16 17:07:12] VNPAY Amount Received: 2860000
+[2025-05-16 17:07:12] Payment record found in DB: {"id":54,"nguoi_dung_id":36,"tong_tien":"2860000.00","trang_thai":"pending","voucher_id":null,"nguoidung_voucher_id":null}
+[2025-05-16 17:07:12] Payment status is pending. Processing update...
+[2025-05-16 17:07:12] VNPAY reported SUCCESS (00).
+[2025-05-16 17:07:12] Ngày thanh toán sẽ được lưu vào CSDL: 2025-05-16 17:07:27
+[2025-05-16 17:07:12] Updated thanh_toan: 1 row(s).
+[2025-05-16 17:07:12] Updated dat_phong: 1 row(s).
+[2025-05-16 17:07:12] Bắt đầu tạo quyền đánh giá cho payment_id: 54
+[2025-05-16 17:07:12] Đã tạo quyền đánh giá cho ma_dat_phong_id: 50, khach_san_id: 1, nguoi_dung_id: 36
+[2025-05-16 17:07:12] Transaction CSDL đã được commit.
+[2025-05-16 17:07:12] Phản hồi cuối cùng gửi cho VNPAY: {"RspCode":"00","Message":"Confirm Success"}
+[2025-05-16 17:07:12] ------ KẾT THÚC XỬ LÝ YÊU CẦU IPN ------
+

@@ -10,36 +10,41 @@ header("Content-Type: application/json; charset=UTF-8");
 $data = json_decode(file_get_contents("php://input"), true);
 
 // Lấy thông tin tìm kiếm từ request
-$khach_san_id = isset($data['khach_san_id']) ? intval($data['khach_san_id']) : null;
-$min_gia = isset($data['min_gia']) ? floatval($data['min_gia']) : null;
-$max_gia = isset($data['max_gia']) ? floatval($data['max_gia']) : null;
+$ngay_nhan = isset($data['ngay_nhan']) ? $data['ngay_nhan'] : null;
+$ngay_tra = isset($data['ngay_tra']) ? $data['ngay_tra'] : null;
+$gia_max = isset($data['gia_max']) ? floatval($data['gia_max']) : null;
 $suc_chua = isset($data['suc_chua']) ? intval($data['suc_chua']) : null;
+$ten_khach_san = isset($data['ten_khach_san']) ? $data['ten_khach_san'] : null;
+$dia_chi = isset($data['dia_chi']) ? $data['dia_chi'] : null;
 $tien_nghi_ids = isset($data['tien_nghi_ids']) ? $data['tien_nghi_ids'] : [];
-$checkin = isset($data['checkin']) ? $data['checkin'] : null;
-$checkout = isset($data['checkout']) ? $data['checkout'] : null;
 
 // Bắt đầu câu truy vấn
-$sql = "SELECT DISTINCT p.* FROM phong p WHERE 1=1";
+$sql = "SELECT DISTINCT ks.id AS khach_san_id, ks.ten AS ten_khach_san, ks.dia_chi, ks.so_sao, ks.hinh_anh, ks.kinh_do, ks.vi_do,
+               p.id AS phong_id, p.ten AS ten_phong, p.gia, p.suc_chua, p.mo_ta AS mo_ta_phong
+        FROM khach_san ks
+        JOIN phong p ON ks.id = p.khach_san_id
+        WHERE 1=1";
 $params = [];
 $types = "";
 
 // Lọc theo khách sạn
-if (!empty($khach_san_id)) {
-    $sql .= " AND p.khach_san_id = ?";
-    $params[] = $khach_san_id;
-    $types .= "i";
+if (!empty($ten_khach_san)) {
+    $sql .= " AND ks.ten LIKE ?";
+    $params[] = "%" . $ten_khach_san . "%";
+    $types .= "s";
 }
 
-// Lọc theo khoảng giá
-if (!empty($min_gia)) {
-    $sql .= " AND p.gia >= ?";
-    $params[] = $min_gia;
-    $types .= "d";
+// Lọc theo địa chỉ
+if (!empty($dia_chi)) {
+    $sql .= " AND LOWER(TRIM(ks.dia_chi)) LIKE ?";
+    $params[] = "%" . strtolower($dia_chi) . "%";
+    $types .= "s";
 }
 
-if (!empty($max_gia)) {
+// Lọc theo giá tối đa
+if (!empty($gia_max)) {
     $sql .= " AND p.gia <= ?";
-    $params[] = $max_gia;
+    $params[] = $gia_max;
     $types .= "d";
 }
 
@@ -64,16 +69,16 @@ if (!empty($tien_nghi_ids)) {
     }
 }
 
-// Kiểm tra phòng có bị đặt trước hay không (SỬA LỖI Ở ĐÂY)
-if (!empty($checkin) && !empty($checkout)) {
+// Kiểm tra phòng có bị đặt trước hay không
+if (!empty($ngay_nhan) && !empty($ngay_tra)) {
     $sql .= " AND p.id NOT IN (
         SELECT ctdp.phong_id 
         FROM chi_tiet_dat_phong ctdp
         JOIN dat_phong dp ON dp.id = ctdp.dat_phong_id
         WHERE (dp.ngay_nhan_phong <= ? AND dp.ngay_tra_phong >= ?)
     )";
-    $params[] = $checkout;
-    $params[] = $checkin;
+    $params[] = $ngay_tra;
+    $params[] = $ngay_nhan;
     $types .= "ss";
 }
 
@@ -89,13 +94,34 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 // Lấy dữ liệu
-$rooms = [];
+$khach_sans = [];
 while ($row = $result->fetch_assoc()) {
-    $rooms[] = $row;
+    $ks_id = $row['khach_san_id'];
+
+    if (!isset($khach_sans[$ks_id])) {
+        $khach_sans[$ks_id] = [
+            "id" => $ks_id,
+            "ten" => $row["ten_khach_san"],
+            "dia_chi" => $row["dia_chi"],
+            "so_sao" => $row["so_sao"],
+            "hinh_anh" => $row["hinh_anh"],
+            "kinh_do" => $row["kinh_do"],
+            "vi_do" => $row["vi_do"],
+            "phongs" => []
+        ];
+    }
+
+    $khach_sans[$ks_id]["phongs"][] = [
+        "phong_id" => $row["phong_id"],
+        "ten_phong" => $row["ten_phong"],
+        "gia" => $row["gia"],
+        "suc_chua" => $row["suc_chua"],
+        "mo_ta" => $row["mo_ta_phong"]
+    ];
 }
 
 // Trả về kết quả JSON
-echo json_encode(["status" => "success", "data" => $rooms]);
+echo json_encode(["status" => "success", "data" => array_values($khach_sans)]);
 
 // Đóng kết nối
 $stmt->close();

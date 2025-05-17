@@ -6,111 +6,116 @@ header("Content-Type: application/json; charset=UTF-8");
 
 $data = json_decode(file_get_contents("php://input"), true);
 
-// Lấy thông tin tìm kiếm từ request
-$ten_khach_san = isset($data['ten_khach_san']) ? "%" . $data['ten_khach_san'] . "%" : null;
-$thanh_pho_id = isset($data['thanh_pho_id']) ? intval($data['thanh_pho_id']) : null;
-$so_sao = isset($data['so_sao']) ? intval($data['so_sao']) : null;
+// Lấy các tham số
 $min_gia = isset($data['min_gia']) ? floatval($data['min_gia']) : null;
 $max_gia = isset($data['max_gia']) ? floatval($data['max_gia']) : null;
 $suc_chua = isset($data['suc_chua']) ? intval($data['suc_chua']) : null;
+$tien_nghi_ids = isset($data['tien_nghi_ids']) ? $data['tien_nghi_ids'] : [];
 $checkin = isset($data['checkin']) ? $data['checkin'] : null;
 $checkout = isset($data['checkout']) ? $data['checkout'] : null;
-$dich_vu_ids = isset($data['dich_vu_ids']) ? $data['dich_vu_ids'] : [];
+$so_sao = isset($data['so_sao']) ? intval($data['so_sao']) : null;
+$dia_chi = isset($data['dia_chi']) ? trim($data['dia_chi']) : null;
+$ten_khach_san = isset($data['ten_khach_san']) ? trim($data['ten_khach_san']) : null;
 
-$sql = "SELECT DISTINCT ks.* 
-        FROM khach_san ks
-        JOIN phong p ON ks.id = p.khach_san_id
-        WHERE 1=1";
+// Query cơ bản
+$sql = "SELECT DISTINCT ks.* FROM khach_san ks";
 
-$params = [];
-$types = "";
+// Danh sách join và điều kiện
+$joins = [];
+$conditions = [];
 
-// Lọc theo tên khách sạn
-if (!empty($ten_khach_san)) {
-    $sql .= " AND ks.ten LIKE ?";
-    $params[] = $ten_khach_san;
-    $types .= "s";
+// Thêm join với bảng phòng nếu có điều kiện liên quan đến phòng
+if (!empty($min_gia) || !empty($max_gia) || !empty($suc_chua) || !empty($tien_nghi_ids) || (!empty($checkin) && !empty($checkout))) {
+    $joins[] = "JOIN phong p ON ks.id = p.khach_san_id";
 }
 
-// Lọc theo thành phố
-if (!empty($thanh_pho_id)) {
-    $sql .= " AND ks.thanh_pho_id = ?";
-    $params[] = $thanh_pho_id;
-    $types .= "i";
-}
-
-// Lọc theo số sao
-if (!empty($so_sao)) {
-    $sql .= " AND ks.so_sao = ?";
-    $params[] = $so_sao;
-    $types .= "i";
-}
-
-// Lọc theo khoảng giá phòng
+// Điều kiện giá phòng
 if (!empty($min_gia)) {
-    $sql .= " AND p.gia >= ?";
-    $params[] = $min_gia;
-    $types .= "d";
+    $conditions[] = "p.gia >= $min_gia";
 }
 
 if (!empty($max_gia)) {
-    $sql .= " AND p.gia <= ?";
-    $params[] = $max_gia;
-    $types .= "d";
+    $conditions[] = "p.gia <= $max_gia";
 }
 
-// Lọc theo sức chứa
+// Điều kiện sức chứa
 if (!empty($suc_chua)) {
-    $sql .= " AND p.suc_chua >= ?";
-    $params[] = $suc_chua;
-    $types .= "i";
+    $conditions[] = "p.suc_chua >= $suc_chua";
 }
 
-// Kiểm tra phòng có trống trong khoảng ngày check-in/out
+// Điều kiện số sao
+if (!empty($so_sao)) {
+    $conditions[] = "ks.so_sao = $so_sao";
+}
+
+// Điều kiện địa chỉ
+if (!empty($dia_chi)) {
+    $search_dia_chi = $conn->real_escape_string($dia_chi);
+    $conditions[] = "(ks.dia_chi LIKE '%$search_dia_chi%' OR LOWER(ks.dia_chi) LIKE '%".strtolower($search_dia_chi)."%')";
+}
+
+// Điều kiện tên khách sạn
+if (!empty($ten_khach_san)) {
+    $search_ten = $conn->real_escape_string($ten_khach_san);
+    $conditions[] = "(ks.ten LIKE '%$search_ten%' OR LOWER(ks.ten) LIKE '%".strtolower($search_ten)."%')";
+}
+
+// Điều kiện tiện nghi
+if (!empty($tien_nghi_ids)) {
+    $placeholders = implode(",", array_map('intval', $tien_nghi_ids));
+    $joins[] = "JOIN tien_nghi_phong tnp ON p.id = tnp.phong_id";
+    $conditions[] = "tnp.tien_nghi_id IN ($placeholders)";
+    // Đảm bảo phòng có tất cả tiện nghi được chọn
+    $conditions[] = "(SELECT COUNT(DISTINCT tien_nghi_id) FROM tien_nghi_phong WHERE phong_id = p.id AND tien_nghi_id IN ($placeholders)) = ".count($tien_nghi_ids);
+}
+
+// Điều kiện ngày checkin/checkout
 if (!empty($checkin) && !empty($checkout)) {
-    $sql .= " AND p.id NOT IN (
-        SELECT ctdp.phong_id 
+    $checkin_escaped = $conn->real_escape_string($checkin);
+    $checkout_escaped = $conn->real_escape_string($checkout);
+    $conditions[] = "p.id NOT IN (
+        SELECT ctdp.phong_id
         FROM chi_tiet_dat_phong ctdp
         JOIN dat_phong dp ON dp.id = ctdp.dat_phong_id
-        WHERE (dp.ngay_nhan_phong <= ? AND dp.ngay_tra_phong >= ?)
+        WHERE dp.trang_thai = 'confirmed'
+        AND NOT (
+            dp.ngay_tra_phong <= '$checkin_escaped' OR dp.ngay_nhan_phong >= '$checkout_escaped'
+        )
     )";
-    $params[] = $checkout;
-    $params[] = $checkin;
-    $types .= "ss";
 }
 
-// Lọc theo dịch vụ khách sạn
-if (!empty($dich_vu_ids)) {
-    $placeholders = implode(",", array_fill(0, count($dich_vu_ids), "?"));
-    $sql .= " AND ks.id IN (
-        SELECT DISTINCT dk.khach_san_id 
-        FROM dichvu_khachsan dk 
-        WHERE dk.dich_vu_id IN ($placeholders)
-    )";
-    foreach ($dich_vu_ids as $id) {
-        $params[] = intval($id);
-        $types .= "i";
-    }
+// Xây dựng query hoàn chỉnh
+if (!empty($joins)) {
+    $sql .= " " . implode(" ", $joins);
 }
 
-// Chuẩn bị câu truy vấn
-$stmt = $conn->prepare($sql);
-
-// Bind parameters nếu có
-if (!empty($params)) {
-    $stmt->bind_param($types, ...$params);
+if (!empty($conditions)) {
+    $sql .= " WHERE " . implode(" AND ", $conditions);
 }
 
-$stmt->execute();
-$result = $stmt->get_result();
+// Thực thi query
+$result = $conn->query($sql);
+
+if (!$result) {
+    echo json_encode([
+        "status" => "error",
+        "message" => "Query error: " . $conn->error,
+        "query" => $sql
+    ]);
+    exit;
+}
 
 $khach_sans = [];
 while ($row = $result->fetch_assoc()) {
     $khach_sans[] = $row;
 }
 
-echo json_encode(["status" => "success", "data" => $khach_sans]);
+// Trả về kết quả
+echo json_encode([
+    "status" => "success",
+    "data" => $khach_sans,
+    "query" => $sql // Có thể bỏ trong môi trường production
+]);
 
-$stmt->close();
 $conn->close();
 ?>
